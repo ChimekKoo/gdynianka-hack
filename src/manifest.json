@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Gdynianka Hack",
+    "version": "1.0.0",
+    "description": "Pokazuj odpowiedzi do testów na testy.gdynianka.pl",
+    "permissions": ["activeTab"],
+    "action": {
+        "default_title": "OFF",
+        "default_icon": "icon_0.png"
+    },
+    "content_scripts": [
+        {
+            "js": ["content.js"],
+            "run_at": "document_end",
+            "matches": ["https://testy.gdynianka.pl/student/*"]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
+
