@@ -1,12 +1,15 @@
 {
     "manifest_version": 3,
     "name": "Gdynianka Hack",
-    "version": "1.0.0",
-    "description": "Pokazuj odpowiedzi do testów na testy.gdynianka.pl",
+    "version": "2.0.0",
+    "description": "Oszukuj testy na testy.gdynianka.pl",
     "permissions": ["activeTab"],
+    "icons": {
+        "48": "icon.png"
+    },
     "action": {
-        "default_title": "OFF",
-        "default_icon": "icon_0.png"
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
     },
     "content_scripts": [
         {
