@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Gdynianka Hack",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "Oszukuj testy na testy.gdynianka.pl",
     "permissions": ["activeTab"],
     "icons": {

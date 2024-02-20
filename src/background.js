@@ -1,10 +1,12 @@
 var state = {
-    tryb_nauki: "0",
+    tryb_nauki: "1",
+    show_answer_key: "0",
     wykryj_blur: "0",
     ukryj_punkty: "0",
     ukryj_wstecz: "0",
     zmien_kolejnosc_pytan: "0",
     zmien_kolejnosc_odpowiedzi: "0",
+    set_password: "1",
 };
 
 // return state or update state on messages

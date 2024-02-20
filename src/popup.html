@@ -5,30 +5,34 @@
     <style>
         html {
             width: 200px;
-            height: 200px;
         }
         body {
             font-family: sans-serif;
-            font-size: 1em;
+            font-size: 0.75em;
         }
         header {
+            display: block;
             font-size: 1.25em;
             font-weight: 800;
+            margin-bottom: 8px;
         }
         label {
-            margin-bottom: 8px;
+            display: block;
+            margin-bottom: 1px;
         }
     </style>
 </head>
 <body>
-    <header>Gdynianka Hack</header>
-    <br>
-    <label><input type="checkbox" name="tryb_nauki" id="gdyinp" value="off">Pokazuj odpowiedzi</label><br>
-    <label><input type="checkbox" name="wykryj_blur" id="gdyinp" value="off">Nie zaliczaj testu przy wyjściu karty testu</label><br>
-    <label><input type="checkbox" name="ukryj_punkty" id="gdyinp" value="off">Ukryj punktację</label><br>
-    <label><input type="checkbox" name="ukryj_wstecz" id="gdyinp" value="off">Zablokuj wracanie</label><br>
-    <label><input type="checkbox" name="zmien_kolejnosc_pytan" id="gdyinp" value="off">Mieszaj pytania</label><br>
-    <label><input type="checkbox" name="zmien_kolejnosc_odpowiedzi" id="gdyinp" value="off">Mieszaj odpowiedzi</label><br>
+    <header>Gdynianka Hack <span style="font-weight: 400;">(v<span id="version"></span>)</span></header>
+
+    <label><input type="checkbox" name="tryb_nauki" id="gdyinp" value="off">Pokazuj odpowiedzi</label>
+    <label><input type="checkbox" name="show_answer_key" id="gdyinp" value="off">Pokazuj odpowiedzi na <code>Ctrl+`</code></label>
+    <label><input type="checkbox" name="wykryj_blur" id="gdyinp" value="off">Wykrywaj wyjście poza test</label>
+    <label><input type="checkbox" name="ukryj_punkty" id="gdyinp" value="off">Ukryj punktację</label>
+    <label><input type="checkbox" name="ukryj_wstecz" id="gdyinp" value="off">Zablokuj wracanie</label>
+    <label><input type="checkbox" name="zmien_kolejnosc_pytan" id="gdyinp" value="off">Mieszaj pytania</label>
+    <label><input type="checkbox" name="zmien_kolejnosc_odpowiedzi" id="gdyinp" value="off">Mieszaj odpowiedzi</label>
+    <label><input type="checkbox" name="set_password" id="gdyinp" value="off">Ustaw hasło na "1"</label>
     
     <script src="popup.js"></script>
 </body>

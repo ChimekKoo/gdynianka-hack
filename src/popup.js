@@ -17,10 +17,16 @@ function getInputs() {
     return state;
 }
 
-// on start fetch state and update inputs
+// on start, fetch state and update inputs
 chrome.runtime.sendMessage({action: "getState"}, state => updateInputs(state));
 
-// on input change set state
+// on input change, set state
 document.querySelectorAll("input#gdyinp").forEach(elem => elem.addEventListener("change", () => {
+    if (elem.name == "tryb_nauki") {
+        if (!elem.checked) document.querySelector('input#gdyinp[name="show_answer_key"]').checked = false;
+        document.querySelector('input#gdyinp[name="show_answer_key"]').disabled = !elem.checked;
+    }
     chrome.runtime.sendMessage({action: "setState", state: getInputs()});
 }));
+
+document.querySelector("#version").innerHTML = chrome.runtime.getManifest().version;
