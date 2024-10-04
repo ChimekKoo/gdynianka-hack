@@ -62,4 +62,3 @@ chrome.runtime.sendMessage({action: "getState"}, state => updateFields(state));
 chrome.runtime.onMessage.addListener((rq, sender, send_resp) => {
     if (rq.action == "setState") updateFields(rq.state);
 });
-

@@ -10,6 +10,7 @@ Proste rozszerzenie do Google Chrome ułatwiające oszukiwanie na testach na [te
 - wyłączenie mieszania kolejności pytań
 - wyłączenie mieszania kolejności odpowiedzi
 - ustawienie hasła do testu na `1`
+- wyłączanie sprawdzania, czy test został otworzony linkiem z maila
 Jestem otwarty na propozycje (issue/PR).
 
 ## Instalacja
