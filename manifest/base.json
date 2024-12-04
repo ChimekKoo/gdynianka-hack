@@ -1,7 +1,6 @@
 {
     "manifest_version": 3,
     "name": "Gdynianka Hack",
-    "version": "2.2.0",
     "description": "Oszukuj testy na testy.gdynianka.pl",
     "permissions": ["activeTab"],
     "icons": {
@@ -17,9 +16,5 @@
             "run_at": "document_end",
             "matches": ["https://testy.gdynianka.pl/student/*"]
         }
-    ],
-    "background": {
-        "service_worker": "background.js"
-    }
+    ]
 }
-

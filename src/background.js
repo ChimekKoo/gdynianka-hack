@@ -7,7 +7,8 @@ var state = {
     zmien_kolejnosc_pytan: "0",
     zmien_kolejnosc_odpowiedzi: "0",
     set_password: "1",
-    tylko_zalogowani: "1",
+    tylko_zalogowani: "0",
+    jedno_podejscie: "0",
 };
 
 // return state or update state on messages

@@ -29,4 +29,4 @@ document.querySelectorAll("input#gdyinp").forEach(elem => elem.addEventListener(
     chrome.runtime.sendMessage({action: "setState", state: getInputs()});
 }));
 
-document.querySelector("#version").innerHTML = chrome.runtime.getManifest().version;
+document.querySelector("#version").innerText = chrome.runtime.getManifest().version;

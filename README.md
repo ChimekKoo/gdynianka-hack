@@ -1,6 +1,6 @@
 # Gdynianka Hack
 
-Proste rozszerzenie do Google Chrome ułatwiające oszukiwanie na testach na [testy.gdynianka.pl](https://testy.gdynianka.pl).
+Proste rozszerzenie do przeglądarki ułatwiające oszukiwanie na testach na [testy.gdynianka.pl](https://testy.gdynianka.pl).
 
 ## Funkcje
 - pokazywanie poprawnych odpowiedzi (za pomocą wbudowanego przycisku lub ukrycie tego przycisku i użycie skrótu ``Ctrl+` ``)
@@ -11,15 +11,29 @@ Proste rozszerzenie do Google Chrome ułatwiające oszukiwanie na testach na [te
 - wyłączenie mieszania kolejności odpowiedzi
 - ustawienie hasła do testu na `1`
 - wyłączanie sprawdzania, czy test został otworzony linkiem z maila
-Jestem otwarty na propozycje (issue/PR).
+- wyłączanie limitu rozwiązań na tylko raz
+Jestem otwarty na propozycje (kontakt/issue/PR).
 
 ## Instalacja
-- pobierz i rozpakuj [ZIP tego repozytorium](https://github.com/chimekkoo/gdynianka-hack/archive/refs/heads/main.zip)
-- wejdź w Chrome na `chrome://extensions`
-- włącz "tryb dewelopera"
-- kliknij "załaduj rozpakowane" i wybierz folder `src` z rozpadkowanego wcześniej ZIP'a
-- jeśli chcesz, przypnij zainstalowane rozszerzenie do paska w przeglądarce
+
+### Chromium / Google Chrome
+- pobierz wersję `chrome.zip` ([tutaj](https://github.com/chimekkoo/gdynianka-hack/releases)) i rozpakuj
+- wejdź na `chrome://extensions`
+- włącz "tryb dewelopera" (w prawym górnym rogu)
+- kliknij "załaduj rozpakowane" i wybierz folder z rozpadkowanego wcześniej ZIP'a
+- jeśli chcesz, dla wygody, przypnij zainstalowane rozszerzenie do paska w przeglądarce
+
+### Firefox
+- pobierz wersję `firefox.zip` ([tutaj](https://github.com/chimekkoo/gdynianka-hack/releases))
+- wejdź na `about:debugging#/runtime/this-firefox`
+- "tymczasowe rozszerzenia" -> "dodaj tymczasowe rozszerzenie" -> wybierz pobrany plk `firefox.zip`
+- jeśli chcesz, dla wygody, przypnij zainstalowane rozszerzenie do paska w przeglądarce
 
 ## Jak używać?
-Wejdź w test (jeszcze go nie rozpoczynając) i kliknij ikonkę rozszerzenia.
-Ustaw dogodne ustawienia testu i dopiero wtedy rozpocznij test.
+- wejdź w test (jeszcze go nie rozpoczynając)
+- kliknij ikonkę rozszerzenia
+- ustaw dogodne ustawienia testu (domyślne ustawienia są korzystne dla piszącego, jednak i tak warto je przeczytać, dla pewności)
+- dopiero teraz rozpocznij test
+
+## Budowanie
+Spakowane pliki rozszerzeń dla przeglądarek (dostępne [tutaj](https://github.com/chimekkoo/gdynianka-hack/releases)) są tworzone przy użyciu skryptu `build.sh`.
